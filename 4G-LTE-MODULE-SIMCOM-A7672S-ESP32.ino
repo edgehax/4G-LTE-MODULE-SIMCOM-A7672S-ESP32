@@ -213,13 +213,13 @@ void setup(){
 
   Serial.println("Network mode connectivity testing (GSM, LTE or GSM/LTE)...");
 
-  for (int i = 0; i <= 4; i++) {
-    uint8_t network[] = {
-        2,  /*Automatic*/
-        13, /*GSM only*/
-        38, /*LTE only*/
-        51  /*GSM and LTE only*/
-    };
+  uint8_t network[] = {
+      2,  /*Automatic*/
+      13, /*GSM only*/
+      38, /*LTE only*/
+      51  /*GSM and LTE only*/
+  };
+  for (unsigned int i = 0; i < sizeof(network) / sizeof(network[0]); i++) {
     Serial.printf("Try %d method\n", network[i]);
     modem.setNetworkMode(network[i]);
     delay(3000);
