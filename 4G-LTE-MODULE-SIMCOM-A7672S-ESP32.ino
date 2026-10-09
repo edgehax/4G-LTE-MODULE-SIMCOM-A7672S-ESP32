@@ -1,5 +1,5 @@
 /*************************************************************************
-   PROJECT: Edgehax 4G V3 Board Sample Code
+   PROJECT: Edgehax 4G V3 Board Sample Code applicable for A7672S and A7672G Global Module
    AUTHOR: Edgehax
    CREATED: 1/07/2025
    COPYRIGHT: Edgehax @MIT license for usage on Edgehax boards
@@ -50,7 +50,8 @@
 #define GSM_PIN "" //In case if you have a password protection for your simcard
 
 /*************************************************************************
-  APN: Set APN as per your sim card
+  APN: Set APN as per your sim card. For Global module check with your
+  local carrier on what APN they support.
 
   AIRTEL: "airtelgprs.com" 
   BSNL: "bsnlnet" 
